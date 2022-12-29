@@ -9,6 +9,7 @@ var d=new Date();
 var monthname=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 //Ensure correct for language. English is "January 1, 2004"
 var TODAY = monthname[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+var YEAR = d.getFullYear();
 //--------------- END LOCALIZEABLE ---------------
 </script>
 <style type="text/css">
@@ -260,7 +261,7 @@ Today, we have many machine tool builders manufacturing truly wondrous machines.
 <tbody>
 <tr>
 <td style="text-align: center;">Copyright ©
-2012
+2012 - <script type="text/javascript">document.write(YEAR)</script> 
 fabmachinetool.com</td>
 </tr>
 </tbody>
